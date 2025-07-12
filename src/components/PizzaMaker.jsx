@@ -46,10 +46,11 @@ const PizzaMaker = () => {
 
   return (
     <>
-      <div className="m-40 p-4 bg-yellow-100 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold mb-4">Pizza Maker</h2>
+      <div className="mx-40 my-10 p-4 bg-yellow-100  text-yellow-950 rounded-lg shadow-md">
+        <h2 className="text-4xl font-bold mb-4">Pizza Maker</h2>
         <div className="mb-4">
           <h3 className="text-xl font-semibold mb-2">Select Toppings:</h3>
+          <div className="flex flex-col space-y-2 justify-center items-center pt-10">
           <ul className="list-disc pl-5">
             {pizzaToppings.map((topping) => (
               <li key={topping.id} className="mb-2">
@@ -65,6 +66,7 @@ const PizzaMaker = () => {
               </li>
             ))}
           </ul>
+          </div>
           {/* this is the total price */}
           <div
             className="w-1/2 mx-auto mt-6 p-4 bg-yellow-200 rounded-lg shadow-md">
