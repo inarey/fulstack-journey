@@ -15,7 +15,7 @@ This repository contains the code and notes from my daily learning sessions as I
 
 ### Day 1 - July 12, 2025
 - ✅ Reviewed React fundamentals
-- ✅ Built a simple counter component
+- ✅ Built a simple Pizza Maker app just to understand the useState and rendering analogy
 - ✅ Learned about JSX and props
 
 ### Day 2 - July 8, 2025
