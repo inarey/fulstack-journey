@@ -24,8 +24,7 @@ const PizzaMaker = () => {
   // If it is, it removes it from the array
   // If it is not, it adds it to the array
   // It also updates the total price based on the selected toppings
-  // This is a common pattern in React for handling form inputs
-  // and managing state
+  // This is a common pattern in React for handling form inputs and managing state
   // It allows for dynamic updates to the UI based on user interactions
   // This is a good example of how to use useState with arrays
   // and how to manage complex state updates in React
