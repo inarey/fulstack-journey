@@ -17,6 +17,7 @@ This repository contains the code and notes from my daily learning sessions as I
 - ✅ Reviewed React fundamentals
 - ✅ Built a simple Pizza Maker app just to understand the useState and rendering analogy
 - ✅ Learned about JSX and props
+- ✅ Update git profile info
 
 ### Day 2 - July 8, 2025
 - TBD...
