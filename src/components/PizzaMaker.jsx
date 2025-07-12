@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-// This explains the use of useState in an arrays
-// This is the array to map out for the pizza maker
+// This app let the user select from a list of pizza toppings, and dynamically calculate and display the total price of selected toppings.
+
 const pizzaToppings = [
   { id: 1, name: "Pepperoni", price: 1.5 },
   { id: 2, name: "Mushrooms", price: 1.0 },
@@ -16,6 +16,8 @@ const pizzaToppings = [
 const PizzaMaker = () => {
   const [toppings, setToppings] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+  //toppings = stores the list of selected toppings.
+  //totalPrice = stores the running total based on selected toppings.
 
   // This function handles the change of toppings
   // It checks if the topping is already selected
@@ -29,17 +31,17 @@ const PizzaMaker = () => {
   // and how to manage complex state updates in React
   const handleToppingChange = (topping) => {
     const isSelected = toppings.includes(topping);
-    // This creates a new array with the selected topping added or removed
-    // It uses the spread operator to create a new array
-    // This is important to avoid mutating the state directly
-    // and to ensure that React can properly re-render the component
-    // It also calculates the new total price based on the selected toppings
-    // This is a common pattern in React for managing state updates
-    // and ensuring that the UI reflects the current state
+    
+  // checks if the topping is already selected
+  //if yes removes it from the array
+  // if no adds it
     const newToppings = isSelected
-      ? toppings.filter((t) => t !== topping)
-      : [...toppings, topping];
+      ? toppings.filter((t) => t !== topping) //deselecting a topping
+      : [...toppings, topping]; //selecting a topping
+
     setToppings(newToppings);
+    // Recalculate total price based on selected toppings using .reduce()
+    // .reduce() iterates over the array and sums up the prices of selected toppings
     const newPrice = newToppings.reduce((total, t) => total + t.price, 0);
     setTotalPrice(newPrice);
   };
@@ -51,6 +53,10 @@ const PizzaMaker = () => {
         <div className="mb-4">
           <h3 className="text-xl font-semibold mb-2">Select Toppings:</h3>
           <div className="flex flex-col space-y-2 justify-center items-center pt-10">
+            {/*loops over each topping  */}
+            {/* renders a checkbox with a label */}
+            {/* checks if the topping is in the selected list using .includes() */}
+            {/* when the use clicks a checkbox, it calls handleToppingChange(topping) */}
           <ul className="list-disc pl-5">
             {pizzaToppings.map((topping) => (
               <li key={topping.id} className="mb-2">
