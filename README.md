@@ -1,4 +1,4 @@
-# My Daily Learning – Started July Web Dev Journey
+# My Daily Learning Log – Started July End Goal in 12 weeks(September 30, 2025) Web Dev Journey
 
 This repository contains the code and notes from my daily learning sessions as I work toward becoming a freelance full-stack developer.
 
