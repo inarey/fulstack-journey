@@ -8,7 +8,7 @@ const Navbar = () => {
         <div>
           <h1 className="text-xl font-bold text-slate-300">
             <span>Eiga</span>
-            <span className="text-slate-500">kan</span>
+            <span className="text-slate-400">kan</span>
           </h1>
         </div>
         <input
