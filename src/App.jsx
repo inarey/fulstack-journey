@@ -1,4 +1,5 @@
-import ErrorExample from "./components/ErrorExample";
+import BirthdayPals from "./components/birthdayPals/BirthdayPals";
+
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
         <h1 className="text-slate-300 text-6xl">
           Journey to Fullstack Projects
         </h1>
-        <ErrorExample />
+        <BirthdayPals />
       </div>
     </>
   );
