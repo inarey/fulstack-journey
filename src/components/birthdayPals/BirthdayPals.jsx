@@ -7,7 +7,7 @@ const BirthdayPals = () => {
 
 
   return (
-    <main className="flex flex-col items-center justify-start h-screen bg-gradient-to-r from-purple-800 to-pink-800 py-10">
+    <main className="flex flex-col items-center justify-start bg-gradient-to-r from-purple-800 to-pink-800 py-10">
       <div className="bg-slate-800 rounded-lg p-6 shadow-lg w-11/12 max-w-2xl">
         <h3 className="text-xl text-slate-300">{birthday.length} Birthday today</h3>
       </div>
