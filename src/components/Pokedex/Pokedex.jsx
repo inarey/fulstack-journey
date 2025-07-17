@@ -9,7 +9,7 @@ const Pokedex = () => {
     setError(null);
     setPokemonData(null);
     try {
-      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
       if (!response.ok) {   
         throw new Error('Pokemon not found');
       }
@@ -18,6 +18,7 @@ const Pokedex = () => {
     } catch (err) {
       setError(err.message);
     }
+  };
 
   return (
     <div className="flex flex-col items-center p-10 bg-gradient-to-b from-yellow-100 to-yellow-200 rounded-lg shadow-lg max-w-md mx-auto mt-10">
@@ -43,15 +44,15 @@ const Pokedex = () => {
 
       {pokemonData && (
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-yellow-800">{pokemonData.name.toUpperCase()}</h2>
+          <h2 className="text-2xl font-bold text-yellow-800">{pokemonData?.name?.toUpperCase()}</h2>
           <img
-            src={pokemonData.sprites.front_default}
-            alt={pokemonData.name}
+            src={pokemonData?.sprites?.front_default}
+            alt={pokemonData?.name}
             className="w-40 mx-auto my-4"
           />
           <p className="text-yellow-700">
             Type:{" "}
-            {pokemonData.types.map((t) => t.type.name).join(", ")}
+            {pokemonData?.types?.map((t) => t.type.name).join(", ")}
           </p>
         </div>
       )}
