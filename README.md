@@ -12,6 +12,8 @@ This repository contains the code and notes from my daily learning sessions as I
   - find() // to look for something inside the variable and actually return that something
   - filter() //this will return a new array as a result from the condition
 
+  - primitives vs reference when comparing values
+    
 ## 🚀 What I'm Learning
 - ReactJS (Components, Props, Hooks)
 - TailwindCSS (Utility-first styling)

@@ -29,4 +29,17 @@ console.log(firstGreaterThanEight); //result: 80
 const filteredNumbers = numbers.filter((number) => number > 8);
 console.log(filteredNumbers); //result: [80, 16, 100]
 
+// Primitives vs Reference
+// In JavaScript, primitives (like numbers and strings) are copied by value,
+// while objects (including arrays) are copied by reference.
+// This means that when you assign a primitive to a new variable, it creates a copy,
+// but when you assign an object, both variables point to the same object in memory.
+// Example:
+const a = 10;
+const b = a; // b is a primitive copy of a
+console.log(b); // result: 10     
 
+const c = [1, 2, 3];
+const d = c; // d is a reference to the same array as c
+d.push(4);
+console.log(c); // result: [1, 2, 3, 4] 
