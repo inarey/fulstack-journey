@@ -6,7 +6,7 @@ This repository contains the code and notes from my daily learning sessions as I
 - Arrays 
   - push() // will push value to the end of the array
   - includes()  //returns boolean if anything is inside/included in the array
-  - forEach()  // forEach will loop over a variable and execute what is in the condition
+  - forEach()  // forEach will iterate over an array and log each array
   - map() condition will run through the variable and execute condition then return a new array with the new result
   - some() //sort if at least any in the array answers the condition in the return statement
   - find() // to look for something inside the variable and actually return that something
