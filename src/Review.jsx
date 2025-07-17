@@ -1,4 +1,6 @@
-const numbers = [80,5,8,16];
+
+
+const numbers = [80, 5, 8, 16];
 
 //push() push 100 and see the result
 numbers.push(100);
@@ -11,7 +13,7 @@ console.log(hasFive); //result: true
 //forEach() iterate over the array and log each number
 numbers.forEach((number) => {
   console.log(number);
-}); //result: 80, 5, 8.16, 100 
+}); //result: 80, 5, 8.16, 100
 
 //map() create a new array with each number multiplied by 2
 const doubledNumbers = numbers.map((number) => number * 2);
@@ -37,9 +39,24 @@ console.log(filteredNumbers); //result: [80, 16, 100]
 // Example:
 const a = 10;
 const b = a; // b is a primitive copy of a
-console.log(b); // result: 10     
+console.log(b); // result: 10
 
 const c = [1, 2, 3];
 const d = c; // d is a reference to the same array as c
 d.push(4);
-console.log(c); // result: [1, 2, 3, 4] 
+console.log(c); // result: [1, 2, 3, 4]
+
+
+
+import React from 'react'
+
+const Review = () => {
+  return (
+    <div>
+      fetch("https://jsonplaceholder.typicode.com/todos");
+    </div>
+  )
+}
+
+export default Review
+
