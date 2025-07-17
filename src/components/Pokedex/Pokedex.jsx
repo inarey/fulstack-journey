@@ -5,9 +5,10 @@ const Pokedex = () => {
   const [pokemonData, setPokemonData] = useState([]);
   const [error, setError] = useState(null);
 
-  const getPokemon = async (name) => {
+  const getPokemon = async () => {
     setError(null);
     setPokemonData(null);
+    
     try {
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
       if (!response.ok) {   
