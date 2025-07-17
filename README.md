@@ -2,6 +2,16 @@
 
 This repository contains the code and notes from my daily learning sessions as I work toward becoming a freelance full-stack developer.
 
+## JavaScript Review
+- Arrays 
+  - push() // will push value to the end of the array
+  - includes()  //returns boolean if anything is inside/included in the array
+  - forEach()  // forEach will loop over a variable and execute what is in the condition
+  - map() condition will run through the variable and execute condition then return a new array with the new result
+  - some() //sort if at least any in the array answers the condition in the return statement
+  - find() // to look for something inside the variable and actually return that something
+  - filter() //this will return a new array as a result from the condition
+
 ## 🚀 What I'm Learning
 - ReactJS (Components, Props, Hooks)
 - TailwindCSS (Utility-first styling)
