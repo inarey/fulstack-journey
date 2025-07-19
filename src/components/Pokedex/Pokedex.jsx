@@ -1,9 +1,14 @@
-import React, {useState } from 'react'
+import React, {useEffect, useState } from 'react'
 
 const Pokedex = () => {
-  const [pokemonName, setPokemonName] = useState('');
+  const [pokemonName, setPokemonName] = useState('pikachu');
   const [pokemonData, setPokemonData] = useState([]);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    getPokemon('pikachu'); // Fetch a default Pokémon on initial load
+  },[]);
+    // Optional: Fetch a default Pokémon on initial load)
 
   const getPokemon = async () => {
     setError(null);
