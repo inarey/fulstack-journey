@@ -25,7 +25,7 @@ const TeaCart = () => {
   const [cart, dispatch] = useReducer(cartReducer, []);
 
   return (
-    <div className="h-96  py-40 bg-green-50 rounded-lg">
+    <div className="py-40 bg-green-50 rounded-lg">
       <h1 className="text-2xl font-bold mb-4">🫖 Tea Order Cart</h1>
 
       <div className="mb-4">
