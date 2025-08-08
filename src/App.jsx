@@ -1,6 +1,7 @@
 import Banner from "./components/Banner";
 import BirthdayPals from "./components/birthdayPals/BirthdayPals";
 import Pokedex from "./components/pokedex/Pokedex";
+import TeaCart from "./components/TeaCart";
 import Review from "./Review";
 
 
@@ -15,6 +16,7 @@ function App() {
         <BirthdayPals />
         <Pokedex />
         <Banner />
+        <TeaCart />
       </div>
     </>
   );
